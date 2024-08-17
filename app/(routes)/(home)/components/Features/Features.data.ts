@@ -3,31 +3,50 @@ import {
   Hourglass,
   MessageCircleQuestion,
   ShieldCheck,
+  DollarSign,
+  Route,
+  Car,
+  
 } from "lucide-react";
 
 export const dataFeatures = [
   {
     icon: Hourglass,
-    text: "24 hour car delivery",
+    text: "Entrega de autos las 24 horas",
     bg: "bg-slate-100",
     delay: 1,
   },
   {
     icon: MessageCircleQuestion,
-    text: "24/7 technical support",
+    text: "Soporte técnico las 24 horas, los 7 días de la semana",
     bg: "bg-indigo-100",
     delay: 1.2,
   },
   {
     icon: ShieldCheck,
-    text: "Premium secure",
+    text: "Seguridad premium",
     bg: "bg-slate-100",
     delay: 1.3,
   },
   {
-    icon: HandCoins,
-    text: "With the best price",
+    icon: DollarSign,
+    text: "Con el mejor precio",
+    bg: "bg-indigo-100",
+    delay: 1.5,
+  },
+
+  {
+    icon: Route,
+    text: "Incluye kilometraje ilimitado",
+    bg: "bg-indigo-100",
+    delay: 1.5,
+  },
+
+  {
+    icon: Car,
+    text: "Política de combustible  como en la entrega",
     bg: "bg-indigo-100",
     delay: 1.5,
   },
 ];
+

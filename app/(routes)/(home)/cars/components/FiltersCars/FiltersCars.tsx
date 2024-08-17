@@ -27,16 +27,16 @@ export function FilterCars(props: FiltersCarsProps) {
         value={filters.type}
       >
         <SelectTrigger className="w-[180px]">
-          <SelectValue placeholder="Tipo de vehículo" />
+          <SelectValue placeholder="Tipo de Auto" />
         </SelectTrigger>
         <SelectContent>
           <SelectGroup>
-            <SelectLabel>Tipo de vehículo</SelectLabel>
+            <SelectLabel>Tipo de Auto</SelectLabel>
             <SelectItem value="sedan">Sedán</SelectItem>
             <SelectItem value="suv">Suv</SelectItem>
             <SelectItem value="coupe">Coupé</SelectItem>
             <SelectItem value="familiar">Familiar</SelectItem>
-            <SelectItem value="luxe">De luxe</SelectItem>
+            <SelectItem value="luxe">Pick-up</SelectItem>
           </SelectGroup>
         </SelectContent>
       </Select>
@@ -50,7 +50,7 @@ export function FilterCars(props: FiltersCarsProps) {
         </SelectTrigger>
         <SelectContent>
           <SelectGroup>
-            <SelectLabel>Cambio de marchas</SelectLabel>
+            <SelectLabel>Tipo de Transmisión </SelectLabel>
             <SelectItem value="manual">Manual</SelectItem>
             <SelectItem value="automatic">Automático</SelectItem>
           </SelectGroup>
@@ -67,10 +67,10 @@ export function FilterCars(props: FiltersCarsProps) {
         <SelectContent>
           <SelectGroup>
             <SelectLabel>Tipo de motor</SelectLabel>
-            <SelectItem value="gasoil">Gasoil</SelectItem>
+            <SelectItem value="gasoil">Gasolina</SelectItem>
             <SelectItem value="diesel">Diesel</SelectItem>
             <SelectItem value="electric">Eléctrico</SelectItem>
-            <SelectItem value="hybrid">Híbbrido</SelectItem>
+            <SelectItem value="hybrid">Híbrido</SelectItem>
           </SelectGroup>
         </SelectContent>
       </Select>
@@ -94,7 +94,7 @@ export function FilterCars(props: FiltersCarsProps) {
       </Select>
 
       <Button onClick={clearFilters}>
-        Remove filters <Trash className="w-4 h-4 ml-2" />
+        Remover Filtros<Trash className="w-4 h-4 ml-2" />
       </Button>
     </div>
   );

@@ -7,6 +7,7 @@ import {
   DialogHeader,
   DialogTitle,
   DialogTrigger,
+  DialogClose,  // Asegúrate de importar DialogClose
 } from "@/components/ui/dialog";
 import { PlusCircle } from "lucide-react";
 import { useState } from "react";
@@ -16,19 +17,22 @@ export function ButtonAddCar() {
   const [openDialog, setOpenDialog] = useState(false);
 
   return (
-    <Dialog open={openDialog}>
+    <Dialog open={openDialog} onOpenChange={setOpenDialog}>
       <DialogTrigger asChild>
         <Button variant="outline" onClick={() => setOpenDialog(true)}>
-          Add new car
+          Agregar auto
           <PlusCircle className="ml-2" />
         </Button>
       </DialogTrigger>
       <DialogContent>
         <DialogHeader>
-          <DialogDescription>
-            <FormAddCar setOpenDialog={setOpenDialog} />
-          </DialogDescription>
+          <DialogTitle>Agregar auto</DialogTitle>
+          <DialogClose asChild>
+         </DialogClose>
         </DialogHeader>
+        <DialogDescription>
+          <FormAddCar setOpenDialog={setOpenDialog} />
+        </DialogDescription>
       </DialogContent>
     </Dialog>
   );

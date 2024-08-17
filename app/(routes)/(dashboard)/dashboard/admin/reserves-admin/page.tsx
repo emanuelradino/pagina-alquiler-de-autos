@@ -20,7 +20,7 @@ export default async function pageReservesAdmin() {
 
   return (
     <div>
-      <h1 className="text-3xl mb-4">Reserves page</h1>
+      <h1 className="text-3xl mb-4">Página de reservas</h1>
 
       <TableReserves orders={orders} />
     </div>

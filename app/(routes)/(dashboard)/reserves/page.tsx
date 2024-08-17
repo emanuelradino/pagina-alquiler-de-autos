@@ -23,7 +23,7 @@ export default async function pageReserves() {
 
   return (
     <div>
-      <h1 className="mb-4 text-3xl">Reserves Page</h1>
+      <h1 className="mb-4 text-3xl">Pagina de Reservas</h1>
       {orders.length === 0 ? (
         <div className="flex flex-col justify-center gap-4">
           <h2 className="text-xl">No tienes ningún pedido</h2>

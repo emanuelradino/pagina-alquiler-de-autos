@@ -47,7 +47,7 @@ export function CalendarSelector(props: CalendarSelectorProps) {
               Días totales {daysBetween}
             </p>
             <p className="mb-4 text-md">
-              Precio total: {daysBetween * Number(carPriceDay)}€ (Imp.incluídos)
+              Precio total: {daysBetween * Number(carPriceDay)} $ (Imp.incluídos)
             </p>
           </>
         )}
@@ -73,7 +73,7 @@ export function CalendarSelector(props: CalendarSelectorProps) {
                   format(date.from, "LLL dd, y")
                 )
               ) : (
-                <span>Pick a date</span>
+                <span>Elija una Fecha</span>
               )}
             </Button>
           </PopoverTrigger>

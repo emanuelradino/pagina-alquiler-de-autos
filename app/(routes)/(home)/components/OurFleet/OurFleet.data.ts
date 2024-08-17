@@ -1,27 +1,23 @@
 export const categoryOurFleet = [
   {
-    name: "Premium",
-    active: false,
+    name: "Familiar",
+    active: true,
   },
   {
     name: "Coupe",
     active: true,
   },
   {
-    name: "Sportcar",
-    active: false,
-  },
-  {
-    name: "Hypercar",
-    active: false,
-  },
-  {
-    name: "Limusines",
+    name: "Deportivo",
     active: true,
   },
   {
-    name: "Classic",
-    active: false,
+    name: "Pick-up",
+    active: true,
+  },
+  {
+    name: "Clasicos",
+    active: true,
   },
 ];
 
@@ -44,6 +40,7 @@ export const dataSecondBlockOurFleet = [
   {
     url: "car-5.jpg",
   },
+
   {
     url: "car-6.jpg",
   },

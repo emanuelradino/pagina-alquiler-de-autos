@@ -77,9 +77,9 @@ export function FormAddCar(props: FormAddCarProps) {
             name="name"
             render={({ field }) => (
               <FormItem>
-                <FormLabel>Car name</FormLabel>
+                <FormLabel>Nombre del Auto</FormLabel>
                 <FormControl>
-                  <Input placeholder="Tesla Model S Plaid" {...field} />
+                  <Input placeholder="Toyota Corolla" {...field} />
                 </FormControl>
                 <FormMessage />
               </FormItem>
@@ -90,7 +90,7 @@ export function FormAddCar(props: FormAddCarProps) {
             name="cv"
             render={({ field }) => (
               <FormItem>
-                <FormLabel>Power</FormLabel>
+                <FormLabel>CV</FormLabel>
                 <FormControl>
                   <Input placeholder="150 CV" type="number" {...field} />
                 </FormControl>
@@ -103,14 +103,14 @@ export function FormAddCar(props: FormAddCarProps) {
             name="transmission"
             render={({ field }) => (
               <FormItem>
-                <FormLabel>Transmission</FormLabel>
+                <FormLabel>Transmisión</FormLabel>
                 <Select
                   onValueChange={field.onChange}
                   defaultValue={field.value}
                 >
                   <FormControl>
                     <SelectTrigger>
-                      <SelectValue placeholder="Select the type of car" />
+                      <SelectValue placeholder="Selecciona el tipo de Transmisión " />
                     </SelectTrigger>
                   </FormControl>
                   <SelectContent>
@@ -127,14 +127,14 @@ export function FormAddCar(props: FormAddCarProps) {
             name="people"
             render={({ field }) => (
               <FormItem>
-                <FormLabel>People</FormLabel>
+                <FormLabel>Personas</FormLabel>
                 <Select
                   onValueChange={field.onChange}
                   defaultValue={field.value}
                 >
                   <FormControl>
                     <SelectTrigger>
-                      <SelectValue placeholder="Select the quantity of people" />
+                      <SelectValue placeholder="Selecciona la cantidad de personas" />
                     </SelectTrigger>
                   </FormControl>
                   <SelectContent>
@@ -153,14 +153,14 @@ export function FormAddCar(props: FormAddCarProps) {
             name="engine"
             render={({ field }) => (
               <FormItem>
-                <FormLabel>Engine</FormLabel>
+                <FormLabel>Motor</FormLabel>
                 <Select
                   onValueChange={field.onChange}
                   defaultValue={field.value}
                 >
                   <FormControl>
                     <SelectTrigger>
-                      <SelectValue placeholder="Select the engine of the car" />
+                      <SelectValue placeholder="Selecciona el tipo de motor del auto" />
                     </SelectTrigger>
                   </FormControl>
                   <SelectContent>
@@ -179,14 +179,14 @@ export function FormAddCar(props: FormAddCarProps) {
             name="type"
             render={({ field }) => (
               <FormItem>
-                <FormLabel>Type</FormLabel>
+                <FormLabel>Tipo de Auto</FormLabel>
                 <Select
                   onValueChange={field.onChange}
                   defaultValue={field.value}
                 >
                   <FormControl>
                     <SelectTrigger>
-                      <SelectValue placeholder="Select the type of car" />
+                      <SelectValue placeholder="Selecciona el tipo de auto" />
                     </SelectTrigger>
                   </FormControl>
                   <SelectContent>
@@ -234,9 +234,9 @@ export function FormAddCar(props: FormAddCarProps) {
             name="priceDay"
             render={({ field }) => (
               <FormItem>
-                <FormLabel>Price per Day</FormLabel>
+                <FormLabel>Precio Por Dia</FormLabel>
                 <FormControl>
-                  <Input placeholder="20€" type="number" {...field} />
+                  <Input placeholder="20$" type="number" {...field} />
                 </FormControl>
                 <FormMessage />
               </FormItem>
@@ -244,7 +244,7 @@ export function FormAddCar(props: FormAddCarProps) {
           />
         </div>
         <Button type="submit" className="w-full mt-5" disabled={!isValid}>
-          Create car
+          Crear Auto
         </Button>
       </form>
     </Form>

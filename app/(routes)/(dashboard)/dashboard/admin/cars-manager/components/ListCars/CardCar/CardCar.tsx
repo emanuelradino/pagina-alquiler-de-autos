@@ -16,11 +16,11 @@ export function CardCar(props: CardCarProps) {
   const deleteCar = async () => {
     try {
       await axios.delete(`/api/car/${car.id}`);
-      toast({ title: "Car deleted ❌" });
+      toast({ title: "Auto Eliminado ❌" });
       router.refresh();
     } catch (error) {
       toast({
-        title: "Something went wrong",
+        title: "Algo salió mal",
         variant: "destructive",
       });
     }
@@ -31,17 +31,17 @@ export function CardCar(props: CardCarProps) {
       await axios.patch(`/api/car/${car.id}`, { isPublish: publish });
       if (publish) {
         toast({
-          title: "Car Published ✌🏽",
+          title: "Auto Publicado ✌🏽",
         });
       } else {
         toast({
-          title: "Car unpublish ⚠️",
+          title: "Despublicar auto ⚠️",
         });
       }
       router.refresh();
     } catch (error) {
       toast({
-        title: "Something went wrong",
+        title: "Algo salió mal",
         variant: "destructive",
       });
     }
@@ -58,18 +58,18 @@ export function CardCar(props: CardCarProps) {
       />
       {car.isPublish ? (
         <p className="absolute top-0 right-0 w-full p-1 text-center text-white bg-green-700 rounded-t-lg">
-          Published
+          Publicado
         </p>
       ) : (
         <p className="absolute top-0 left-0 right-0 w-full p-1 text-center text-white bg-red-300 rounded-t-lg">
-          Not Published
+          No Publicado
         </p>
       )}
 
       <div className="relative p-3">
         <div className="flex flex-col mb-3 gap-x-4">
           <p className="text-xl min-h-16 lg:min-h-fit">{car.name}</p>
-          <p>{car.priceDay}€ /día</p>
+          <p>{car.priceDay} $/día</p>
         </div>
 
         <div className="grid md:grid-cols-2 gap-x-4">
@@ -101,7 +101,7 @@ export function CardCar(props: CardCarProps) {
 
         <div className="flex justify-between mt-3 gap-x-4">
           <Button variant="outline" onClick={deleteCar}>
-            Delete
+            Eliminar Auto
             <Trash className="w-4 h-4 ml-2" />
           </Button>
 
@@ -114,7 +114,7 @@ export function CardCar(props: CardCarProps) {
             variant="outline"
             onClick={() => handlerPublishCar(false)}
           >
-            Unpublish
+            No publicado
             <Upload className="w-4 h-4 ml-2" />
           </Button>
         ) : (
@@ -122,7 +122,7 @@ export function CardCar(props: CardCarProps) {
             className="w-full mt-3"
             onClick={() => handlerPublishCar(true)}
           >
-            Publish
+            Publicado
             <Upload className="w-4 h-4 ml-2" />
           </Button>
         )}

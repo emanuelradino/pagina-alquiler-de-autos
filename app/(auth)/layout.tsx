@@ -10,7 +10,7 @@ export default function AuthLayout({
       <div className="flex items-center justify-center">{children}</div>
       <div className="hidden lg:flex lg:bg-slate-300 h-full justify-center items-center lg:flex-col">
         <Image src="/logo.svg" alt="Logo TarreCars" width="80" height="80" />
-        <h1 className="text-xl font-bold">TarreCars</h1>
+        <h1 className="text-xl font-bold">LuxCarTucumán</h1>
       </div>
     </div>
   );

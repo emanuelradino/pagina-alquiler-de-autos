@@ -21,7 +21,7 @@ export const useLovedCars = create(
 
         if (existingItem) {
           return toast({
-            title: "El coche ya existe en la lista 💔",
+            title: "El auto ya existe en la lista 💔",
           });
         }
 
@@ -30,7 +30,7 @@ export const useLovedCars = create(
         });
 
         toast({
-          title: "Coche añadido a la lista 🚙",
+          title: "Auto añadido a la lista 🚙",
         });
       },
 
@@ -39,7 +39,7 @@ export const useLovedCars = create(
           lovedItems: [...get().lovedItems.filter((item) => item.id !== id)],
         });
         toast({
-          title: "El coche se ha eliminado de la lista ",
+          title: "El auto se ha eliminado de la lista ",
         });
       },
     }),

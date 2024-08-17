@@ -40,7 +40,7 @@ export function ModalAddReservation(props: ModalAddReservationProps) {
 
     window.location = response.data.url;
     toast({
-      title: "Car reserved ✌🏽",
+      title: "Auto reservado ✌🏽",
     });
   };
 
@@ -48,13 +48,13 @@ export function ModalAddReservation(props: ModalAddReservationProps) {
     <AlertDialog>
       <AlertDialogTrigger asChild>
         <Button variant="outline" className="w-full mt-3">
-          Reservar vehículo
+          Reservar auto
         </Button>
       </AlertDialogTrigger>
       <AlertDialogContent>
         <AlertDialogHeader>
           <AlertDialogTitle>
-            Selecciona las fechas en las quieres alquilar el coche
+            Selecciona las fechas en las quieres alquilar el auto
           </AlertDialogTitle>
           <AlertDialogDescription>
             <CalendarSelector
@@ -64,9 +64,9 @@ export function ModalAddReservation(props: ModalAddReservationProps) {
           </AlertDialogDescription>
         </AlertDialogHeader>
         <AlertDialogFooter>
-          <AlertDialogCancel>Cancel</AlertDialogCancel>
+          <AlertDialogCancel>Cancelar</AlertDialogCancel>
           <AlertDialogAction onClick={() => onReserveCar(car, dateSelected)}>
-            Reservar vehículo
+            Reservar auto
           </AlertDialogAction>
         </AlertDialogFooter>
       </AlertDialogContent>

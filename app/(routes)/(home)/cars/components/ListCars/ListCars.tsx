@@ -23,7 +23,7 @@ export function ListCars(props: ListCarsProps) {
   return (
     <>
       {cars.length === 0 && (
-        <p>No se han encontrado vehículos con estos filtros</p>
+        <p>No se han encontrado autos con estos filtros</p>
       )}
       <div className="grid  md:grid-cols-2 gap-6 lg:grid-cols-4">
         {cars.map((car: Car) => {
@@ -52,7 +52,7 @@ export function ListCars(props: ListCarsProps) {
               <div className="p-3">
                 <div className="flex flex-col mb-3 gap-x-4">
                   <p className="text-xl min-h-16 lg:min-h-fit">{name}</p>
-                  <p>{priceDay}€</p>
+                  <p>{priceDay} $ </p>
                 </div>
                 <p className="flex items-center">
                   <Gem className="w-4 h-4 mr-2" strokeWidth={1} />
@@ -74,6 +74,7 @@ export function ListCars(props: ListCarsProps) {
                   <Gauge className="w-4 h-4 mr-2" strokeWidth={1} />
                   {cv} CV
                 </p>
+                
 
                 {userId ? (
                   <div className="flex items-center justify-center gap-x-3">

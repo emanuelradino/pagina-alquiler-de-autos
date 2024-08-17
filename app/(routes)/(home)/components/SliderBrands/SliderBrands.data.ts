@@ -3,30 +3,30 @@ export const dataBrands = [
     url: "bmw.png",
   },
   {
-    url: "ferrari.png",
-  },
-  {
-    url: "jaguar.png",
-  },
-  {
-    url: "lambo.png",
-  },
-  {
-    url: "porsche.png",
-  },
-  {
-    url: "tesla.png",
+    url: "mercedes-benz.png",
   },
   {
     url: "audi.png",
   },
   {
-    url: "lotus.png",
+    url: "jeep.png",
   },
   {
-    url: "land-rover.png",
+    url: "chevrolet.png",
   },
   {
-    url: "volvo.png",
+    url: "volkswagen.png",
+  },
+  {
+    url: "fiat.png",
+  },
+  {
+    url: "peugeot.png",
+  },
+  {
+    url: "toyota.png",
+  },
+  {
+    url: "renault.png",
   },
 ];
