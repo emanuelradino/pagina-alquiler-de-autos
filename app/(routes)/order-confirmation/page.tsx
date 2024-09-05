@@ -11,7 +11,7 @@ export default function orderConfirmationPage() {
           <h1 className="text-2xl">¡Muchas gracias por confiar en nosotros!</h1>
           <p>
             En breves momentos recibirás toda la información a través de tu
-            correo electrónico
+            correo electrónico , como la factura y la direccion de retiro del vehiculo
           </p>
           <p>
             Puedes visualizar todas tus reservas dentro de tu Área de cliente
