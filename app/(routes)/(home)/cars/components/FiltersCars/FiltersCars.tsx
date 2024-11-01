@@ -36,7 +36,7 @@ export function FilterCars(props: FiltersCarsProps) {
             <SelectItem value="suv">Suv</SelectItem>
             <SelectItem value="coupe">Coupé</SelectItem>
             <SelectItem value="familiar">Familiar</SelectItem>
-            <SelectItem value="luxe">Pick-up</SelectItem>
+            <SelectItem value="pick-up">Pick-up</SelectItem>
           </SelectGroup>
         </SelectContent>
       </Select>
@@ -46,7 +46,7 @@ export function FilterCars(props: FiltersCarsProps) {
         value={filters.transmission}
       >
         <SelectTrigger className="w-[180px]">
-          <SelectValue placeholder="Cambio de marchas" />
+          <SelectValue placeholder="Tipo de Transmisión" />
         </SelectTrigger>
         <SelectContent>
           <SelectGroup>

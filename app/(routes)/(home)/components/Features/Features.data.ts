@@ -18,7 +18,7 @@ export const dataFeatures = [
   },
   {
     icon: MessageCircleQuestion,
-    text: "Soporte técnico las 24 horas, los 7 días de la semana",
+    text: "Soporte técnico las 24 horas: Por inconvenientes comunicarse al +5493816665555",
     bg: "bg-indigo-100",
     delay: 1.2,
   },

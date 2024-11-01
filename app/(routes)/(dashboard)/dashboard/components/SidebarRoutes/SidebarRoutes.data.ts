@@ -13,7 +13,7 @@ export const dataGeneralSidebar = [
   },
   {
     icon: Heart,
-    label: "Autos que me gustan",
+    label: "Mis Autos Favoritos",
     href: "/loved-cars",
   },
 ];
