@@ -7,4 +7,4 @@ React JS | Next JS | Tailiwnd CSS | Shadcn | TypeScript | Prisma | Stripe | F
 
 https://pagina-alquiler-de-autos.vercel.app/
 
->>>>>>> 9ef802a31c1437a38aad2e7172a7af994abbb9b6
+
