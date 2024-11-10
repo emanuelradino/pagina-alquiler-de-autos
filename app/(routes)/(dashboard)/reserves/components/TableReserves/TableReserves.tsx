@@ -10,6 +10,7 @@ import {
 } from "@/components/ui/table";
 import { TableReservesProps } from "./TableReserves.types";
 import { formatPrice } from "@/lib/formatPrice";
+import { format } from "date-fns";
 
 export function TableReserves(props: TableReservesProps) {
   const { orders } = props;
@@ -35,10 +36,10 @@ export function TableReserves(props: TableReservesProps) {
           <TableRow key={order.id}>
             <TableCell className="font-medium">{order.carName}</TableCell>
             <TableCell>
-              {new Date(order.orderDate).toLocaleDateString()}
+              {format(new Date(order.orderDate), "dd/MM/yyyy")}
             </TableCell>
             <TableCell>
-              {new Date(order.orderEndDate).toLocaleDateString()}
+              {format(new Date(order.orderEndDate), "dd/MM/yyyy")}
             </TableCell>
             <TableCell>
               <div className="p-2 text-white bg-green-600 rounded-lg w-fit">
