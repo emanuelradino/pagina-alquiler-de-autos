@@ -194,7 +194,7 @@ export function FormAddCar(props: FormAddCarProps) {
                     <SelectItem value="suv">SUV</SelectItem>
                     <SelectItem value="coupe">Coupé</SelectItem>
                     <SelectItem value="familiar">Familiar</SelectItem>
-                    <SelectItem value="luxe">De luxe</SelectItem>
+                    <SelectItem value="luxe">Pick-up</SelectItem>
                   </SelectContent>
                 </Select>
                 <FormMessage />
