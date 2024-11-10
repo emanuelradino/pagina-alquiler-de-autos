@@ -1,4 +1,4 @@
-Proyecto realizado por RadinoDev
+Proyecto Seminario Final de Informatica por RadinoEmanuel
 
 ##  Tecnologías usadas
 
